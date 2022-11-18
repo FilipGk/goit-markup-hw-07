@@ -1,0 +1,1229 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system,
+    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+:root {
+  --main-text-color: #212121;
+  --background-color: #2f303a;
+  --text-color: #757575;
+  --fancy-blue-color: #2196f3;
+  --icon-color: #afb1b8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin: 0 auto;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  display: flex;
+  margin: 0;
+  padding-left: 93px;
+}
+
+.header .header-contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.header-contact-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-contact-wrapper div:hover svg {
+  cursor: pointer;
+  fill: var(--fancy-blue-color);
+}
+
+.web-color {
+  color: var(--fancy-blue-color);
+}
+
+.footer {
+  background-color: var(--background-color);
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer li {
+  display: flex;
+  list-style: none;
+}
+
+.footer-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  color: #ffffff;
+  margin: 0;
+  padding-block: 9px;
+}
+
+.footer-address-wrapper {
+  padding-top: 10px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding-block: 9px;
+  text-decoration: none;
+}
+
+.footer-contact:hover {
+  cursor: pointer;
+  color: var(--fancy-blue-color);
+}
+
+.logo-link-footer {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 2.2;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo-link-header {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 2.2;
+  color: #000000;
+  text-decoration: none;
+  margin: 0;
+}
+
+.navigation a {
+  position: relative;
+}
+
+.current-page-main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -32px;
+  background-color: #2196f3;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.current-page-portfolio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -32px;
+  background-color: #2196f3;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.nav-element {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--main-text-color);
+  margin-right: 46px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-element:hover,
+.nav-element:focus {
+  color: var(--fancy-blue-color);
+  cursor: pointer;
+}
+
+.header li {
+  list-style: none;
+}
+
+.header-contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact:hover {
+  color: var(--fancy-blue-color);
+  cursor: pointer;
+}
+
+.header-contact:focus {
+  color: var(--fancy-blue-color);
+}
+
+.banner {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/banner-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 208px;
+  padding-top: 208px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+}
+
+.banner-header {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 30px;
+  max-width: 696px;
+}
+
+.banner-button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--fancy-blue-color);
+  border: 1px solid var(--fancy-blue-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.description {
+  display: flex;
+  max-width: 1200px;
+}
+
+.description ul {
+  display: flex;
+  flex-direction: row;
+  max-width: 1600px;
+}
+
+.description li {
+  list-style: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.description h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.description-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.description-title {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200x;
+}
+
+.description-title h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 2.62;
+  text-align: center;
+}
+
+.description-title ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.description-list-items {
+  padding-bottom: 94px;
+  display: flex;
+}
+
+.description-image {
+  width: 370px;
+  height: 294px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.our-team {
+  background-color: #f5f4fa;
+}
+
+.our-team ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.our-team h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 2.62;
+  text-align: center;
+}
+
+.our-team li {
+  list-style: none;
+}
+
+.team-card {
+  width: 270px;
+  height: 368px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.team-card-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team-card-job {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.portfolio-main-page {
+  background-color: #ffffff;
+}
+
+.portfolio-main-page li {
+  list-style: none;
+}
+
+.portfolio-selector-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--main-text-color);
+  background-color: #f5f4fa;
+  border: 1px solid #f5f4fa;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-selector-button:hover,
+.portfolio-selector-button:focus {
+  color: #ffffff;
+  background-color: var(--fancy-blue-color);
+  cursor: pointer;
+  border: 1px solid var(--fancy-blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-selector-button:focus {
+  color: #ffffff;
+  background-color: var(--fancy-blue-color);
+  border-color: var(--fancy-blue-color);
+  cursor: pointer;
+}
+
+.project-element {
+  height: 404px;
+  position: relative;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  flex-basis: ((100% - 60px)/3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-element:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-element-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-element-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-selector-list ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 34px;
+}
+
+.portfolio-selector-list ul li {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.our-team-icons {
+  fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team-icons-wrapper li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team-icons-wrapper li:hover {
+  background-color: var(--fancy-blue-color);
+  cursor: pointer;
+}
+
+.our-team-icons-wrapper ul {
+  display: flex;
+  gap: 10px;
+}
+
+.our-team-icons-wrapper li:hover svg {
+  fill: #ffffff;
+}
+
+.description-icon-wrapper {
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 25px 0 25px 0;
+  border-radius: 4px;
+}
+
+.header-contact-icon {
+  fill: var(--text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-clients li {
+  list-style: none;
+}
+
+.our-clients ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.our-clients div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 17px 31px 14px 31px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-clients div:hover {
+  border-color: var(--fancy-blue-color);
+  cursor: pointer;
+}
+
+.our-clients div:hover svg {
+  fill: var(--fancy-blue-color);
+}
+
+.our-clients-icon {
+  fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-clients h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 2.62;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.footer-icon {
+  fill: #ffffff;
+}
+
+.footer-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-wrapper:hover,
+.footer-icon-wrapper:focus {
+  background-color: var(--fancy-blue-color);
+  cursor: pointer;
+}
+
+.join-to-us {
+  margin-right: 78px;
+}
+
+.join-to-us ul {
+  display: flex;
+  gap: 10px;
+}
+
+.join-to-us p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.service-description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  background: rgba(47, 48, 58, 0.8);
+  padding-block: 27px;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 109.5px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0px;
+  background-color: rgba(33, 150, 243, 0.9);
+  overflow: hidden;
+  transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-element:hover .image-overlay {
+  height: 294px;
+}
+
+.image-overlay p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 49px 45px 49px 25px;
+}
+
+.backdrop {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 0 0 / 0.5);
+  z-index: 2;
+  transition: transform 250ms;
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-radius: 4px;
+}
+
+.is-hidden {
+  visibility: 1;
+  opacity: 1;
+  pointer-events: all;
+  transform: scale(0);
+}
+
+.modal-close-button {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.modal-close-button svg {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.form-newsletter-wrapper {
+  position: relative;
+  width: 570px;
+  display: flex;
+  padding: 0;
+  border: none;
+}
+
+.form-newsletter-wrapper input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  padding-block: 14px;
+  padding-left: 16px;
+}
+
+.newsletter-button {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--fancy-blue-color);
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-left: 12px;
+}
+
+.newsletter-button svg {
+  margin-left: 24px;
+}
+
+.newsletter-label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  position: absolute;
+  top: -32px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 528px;
+  height: 581px;
+  padding-inline: 40px;
+  padding-top: 40px;
+}
+
+.form-fieldset {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 28px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  padding-block: 10px;
+  padding-inline: 12px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.88;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.form-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.43;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 30px;
+}
+
+.form-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  background-color: var(--fancy-blue-color);
+  border-color: var(--fancy-blue-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.form-fieldset:has(.form-input:focus) {
+  border-color: var(--fancy-blue-color);
+  fill: var(--fancy-blue-color);
+}
+
+.form-textarea-wrapper:has(.form-textarea:focus) {
+  border-color: var(--fancy-blue-color);
+}
+
+.form-input {
+  border: none;
+  width: 100%;
+  margin-left: 12px;
+  outline: none;
+}
+
+.form-privacy-policy {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-privacy-policy label {
+  margin-left: 7px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.form-privacy-policy label a {
+  color: #2196f3;
+}
+
+.form-privacy-policy label::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  border: 2px solid black;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-privacy-policy input[type="checkbox"]:checked + label::before {
+  background-color: var(--fancy-blue-color);
+  border-color: var(--fancy-blue-color);
+}
+
+.checkmark {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+  left: 0;
+  opacity: 1;
+}
+
+.form-checkbox {
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.form-textarea {
+  width: 100%;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.88;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  padding: 0;
+  resize: none;
+  outline: none;
+}
+
+.form-textarea-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  padding-block: 12px;
+  padding-inline: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
