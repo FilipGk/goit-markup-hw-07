@@ -149,13 +149,10 @@ h4 {
   align-items: center;
 }
 
-/* ===================================================================================BANNER===================================================== */
+/* ===========================================================BANNER===================================================== */
 
 .banner {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/banner-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -193,7 +190,7 @@ h4 {
   cursor: pointer;
 }
 
-/* ==============================================================================MODAL========================================================================== */
+/* ===============================================MODAL========================================================================== */
 .modal {
   width: 528px;
   height: 581px;
@@ -246,7 +243,7 @@ h4 {
   transform: scale(0);
 }
 
-/* ================================================================================FORM===================================================================== */
+/* ===============================================FORM===================================================================== */
 .order-form {
   display: flex;
   flex-direction: column;
@@ -279,8 +276,7 @@ h4 {
   width: 100%;
   padding-block: 10px;
   padding-inline: 12px;
-  transition: border-color 250ms var(--cubic-bezier),
-    fill 250ms var(--cubic-bezier);
+  transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
 
 .form-fieldset:has(.form-input:focus) {
@@ -373,8 +369,7 @@ h4 {
   left: 0;
   border: 2px solid black;
   border-radius: 2px;
-  transition: background-color 250ms var(--cubic-bezier),
-    border-color 250ms var(--cubic-bezier);
+  transition: background-color 250ms var(--cubic-bezier), border-color 250ms var(--cubic-bezier);
 }
 
 .form-privacy-policy input[type="checkbox"]:checked + label::before {
@@ -421,7 +416,7 @@ h4 {
   cursor: pointer;
 }
 
-/* =========================================================================================DESCRIPTION========================================================== */
+/* ================================================DESCRIPTION========================================================== */
 .description {
   display: flex;
   flex-wrap: wrap;
@@ -520,18 +515,14 @@ h4 {
   padding-block: 27px;
 }
 
-/* =========================================================================================OUR-TEAM========================================================== */
-.our-team {
+/* ===========GOTOWE!=================OUR-TEAM========================================================== */
+/* ===========GOTOWE!=================OUR-TEAM========================================================== */
+/* ===========GOTOWE!=================OUR-TEAM========================================================== */
+.team {
   background-color: #f5f4fa;
 }
 
-.our-team ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.our-team h2 {
+.team__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -540,40 +531,13 @@ h4 {
   text-align: center;
 }
 
-.our-team li {
-  list-style: none;
-}
-
-.our-team-icons {
-  fill: var(--icon-color);
-  transition: fill 250ms var(--cubic-bezier);
-}
-
-.our-team-icons-wrapper li {
+.team-card__list {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: background-color 250ms var(--cubic-bezier);
 }
 
-.our-team-icons-wrapper li:hover {
-  background-color: var(--color-blue);
-  cursor: pointer;
-}
-
-.our-team-icons-wrapper ul {
-  display: flex;
-  gap: 10px;
-}
-
-.our-team-icons-wrapper li:hover svg {
-  fill: var(--color-white);
-}
-
-.team-card {
+.team-card__list-element {
   width: 270px;
   height: 368px;
   background-color: var(--color-white);
@@ -582,9 +546,10 @@ h4 {
   border-radius: 0px 0px 4px 4px;
   margin-left: 15px;
   margin-right: 15px;
+  list-style: none;
 }
 
-.team-card-name {
+.team-card__name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -593,7 +558,7 @@ h4 {
   text-align: center;
 }
 
-.team-card-job {
+.team-card__job {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -603,42 +568,39 @@ h4 {
   text-align: center;
 }
 
-/* =========================================================================================OUR-CLIENTS========================================================== */
-.our-clients li {
-  list-style: none;
-}
-
-.our-clients ul {
+.team-icons__list {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
-.our-clients div {
+.team-icons__list-element {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  padding: 17px 31px 14px 31px;
-  transition: border-color 250ms var(--cubic-bezier);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
-.our-clients div:hover {
-  border-color: var(--color-blue);
+.team-icons__list-element:hover {
+  background-color: var(--color-blue);
   cursor: pointer;
 }
-
-.our-clients div:hover svg {
-  fill: var(--color-blue);
-}
-
-.our-clients-icon {
+.team-icons__icon {
   fill: var(--icon-color);
   transition: fill 250ms var(--cubic-bezier);
 }
 
-.our-clients h2 {
+.team-icons__list-element:hover .team-icons__icon {
+  fill: var(--color-white);
+}
+
+/* =========GOTOWE!====================CLIENTS========================================================== */
+/* =========GOTOWE!====================CLIENTS========================================================== */
+/* =========GOTOWE!====================CLIENTS========================================================== */
+.clients__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -648,7 +610,44 @@ h4 {
   padding-bottom: 50px;
 }
 
-/* =========================================================================================FOOTER========================================================== */
+.clients__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients__list-element {
+  list-style: none;
+}
+
+.clients-icon__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 17px 31px 14px 31px;
+  transition: border-color 250ms var(--cubic-bezier);
+}
+
+.clients-icon__wrapper:hover {
+  border-color: var(--color-blue);
+  cursor: pointer;
+}
+
+.clients__icon {
+  fill: var(--icon-color);
+  transition: fill 250ms var(--cubic-bezier);
+}
+
+.clients-icon__wrapper:hover .clients__icon {
+  fill: var(--color-blue);
+}
+
+/* =============GOTOWE!==================FOOTER========================================================== */
+/* =============GOTOWE!==================FOOTER========================================================== */
+/* =============GOTOWE!==================FOOTER========================================================== */
+
 .footer {
   background-color: var(--background-color);
   display: flex;
@@ -667,44 +666,7 @@ h4 {
   margin: 0 auto;
 }
 
-.footer li {
-  display: flex;
-  list-style: none;
-}
-
-.footer-address {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  line-height: 1.71;
-  color: var(--color-white);
-  margin: 0;
-  padding-block: 9px;
-}
-
-.footer-address-wrapper {
-  padding-top: 10px;
-}
-
-.footer-contact {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0;
-  padding-block: 9px;
-  text-decoration: none;
-}
-
-.footer-contact:hover {
-  cursor: pointer;
-  color: var(--color-blue);
-}
-
-.logo-link-footer {
+.footer__logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -715,88 +677,57 @@ h4 {
   text-decoration: none;
 }
 
-.footer-icon {
-  fill: var(--color-white);
+.footer__address {
+  padding-top: 10px;
 }
 
-.footer-icon-wrapper {
+.footer-address__list-element {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: background-color 250ms var(--cubic-bezier);
+  list-style: none;
 }
 
-.footer-icon-wrapper:hover,
-.footer-icon-wrapper:focus {
-  background-color: var(--color-blue);
-  cursor: pointer;
-}
-
-/* =================================================================================================NEWSLETTER================================================================================ */
-.form-newsletter-wrapper {
-  position: relative;
-  width: 570px;
-  display: flex;
-  padding: 0;
-  border: none;
-}
-
-.form-newsletter-wrapper input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: var(--background-color);
-  font-family: "Roboto";
+.footer-address__address {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  width: 358px;
-  padding-block: 14px;
-  padding-left: 16px;
-}
-
-.newsletter-button {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  background-color: var(--color-blue);
-  border: none;
-  border-radius: 4px;
-  color: var(--color-white);
-  margin-left: 12px;
-}
-
-.newsletter-button svg {
-  margin-left: 24px;
-}
-
-.newsletter-label {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  line-height: 1.71;
   color: var(--color-white);
-  width: 100%;
-  position: absolute;
-  top: -32px;
+  margin: 0;
+  padding-block: 9px;
 }
 
-/* =================================================================================================PORTFOLIO PAGE============================================================================= */
+.footer-address__email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding-block: 9px;
+  text-decoration: none;
+}
+
+.footer-address__tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding-block: 9px;
+  text-decoration: none;
+}
+
+.footer-address__email:hover,
+.footer-address__tel:hover {
+  cursor: pointer;
+  color: var(--color-blue);
+}
+
+/* ===================================================PORTFOLIO PAGE============================================================================= */
 
 .container {
   max-width: 1200px;
@@ -822,9 +753,8 @@ h4 {
   background-color: #f5f4fa;
   border: 1px solid #f5f4fa;
   border-radius: 4px;
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier),
-    box-shadow 250ms var(--cubic-bezier);
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier),
+    border 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
 }
 
 .portfolio-selector-button:hover,
@@ -867,7 +797,7 @@ h4 {
   border-radius: 2px;
 }
 
-/* =================================================================================================PROJECTS============================================================================= */
+/* =====================================================PROJECTS============================================================================= */
 .project-element {
   height: 404px;
   position: relative;
@@ -933,17 +863,14 @@ h4 {
   color: var(--color-white);
   padding: 49px 45px 49px 25px;
 }
-/* =================================================================================================JOIN-TO-US============================================================================= */
-.join-to-us {
+/* ======GOTOWE!===============================================JOIN-TO-US social============================================================================= */
+/* ======GOTOWE!===============================================JOIN-TO-US social============================================================================= */
+/* ======GOTOWE!===============================================JOIN-TO-US social============================================================================= */
+.social {
   margin-right: 78px;
 }
 
-.join-to-us ul {
-  display: flex;
-  gap: 10px;
-}
-
-.join-to-us p {
+.social__heading {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -954,6 +881,97 @@ h4 {
   color: var(--color-white);
   margin-bottom: 20px;
 }
+
+.social__list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.social-icon__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms var(--cubic-bezier);
+}
+
+.social-icon__wrapper:hover,
+.social-icon__wrapper:focus {
+  background-color: var(--color-blue);
+  cursor: pointer;
+}
+
+.social-icon {
+  fill: var(--color-white);
+}
+
+/* ======GOTOWE!=====================================================NEWSLETTER================================================================================ */
+/* ======GOTOWE!=====================================================NEWSLETTER================================================================================ */
+/* ======GOTOWE!=====================================================NEWSLETTER================================================================================ */
+.newsletter-form__wrapper {
+  position: relative;
+  width: 570px;
+  display: flex;
+  padding: 0;
+  border: none;
+}
+
+.newsletter-form__label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  width: 100%;
+  position: absolute;
+  top: -32px;
+}
+.newsletter-form__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  padding-block: 14px;
+  padding-left: 16px;
+}
+
+.newsletter-form__button {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-blue);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-white);
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.newsletter-form-button__icon {
+  margin-left: 24px;
+}
+
+/* ===================misc============== */
 
 .web-color {
   color: var(--color-blue);
