@@ -10,7 +10,7 @@
   position: relative;
   background: var(--color-white);
   border-bottom: 1px solid #eeeeee;
-  flex-basis: ((100% - 60px)/3);
+  // flex-basis: ((100% - 60px)/3);
   transition: box-shadow 250ms var(--cubic-bezier);
 }
 

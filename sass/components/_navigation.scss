@@ -1,4 +1,4 @@
-.navigation-list {
+.navigation__list {
   display: flex;
   margin: 0;
   padding-left: 93px;
@@ -16,10 +16,10 @@
   color: var(--primary-text-color);
   margin-right: 46px;
   transition: color 250ms var(--cubic-bezier);
-}
 
-.nav-element:hover,
-.nav-element:focus {
-  color: var(--color-blue);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--color-blue);
+    cursor: pointer;
+  }
 }

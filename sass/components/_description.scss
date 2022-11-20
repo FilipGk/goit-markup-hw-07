@@ -3,13 +3,13 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
-}
 
-.description__list {
-  display: flex;
-  flex-direction: row;
-  max-width: 1600px;
-  padding-bottom: 94px;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    max-width: 1600px;
+    padding-bottom: 94px;
+  }
 }
 
 .description-list__item {

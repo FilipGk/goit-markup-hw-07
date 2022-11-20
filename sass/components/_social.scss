@@ -29,12 +29,12 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: background-color 250ms var(--cubic-bezier);
-}
 
-.social-icon__wrapper:hover,
-.social-icon__wrapper:focus {
-  background-color: var(--color-blue);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--color-blue);
+    cursor: pointer;
+  }
 }
 
 .social-icon {
